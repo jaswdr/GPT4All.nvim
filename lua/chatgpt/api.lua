@@ -227,7 +227,7 @@ local function loadApiKey(envName, configName, optionName, callback, defaultValu
 end
 
 local function loadAzureConfigs()
-  Api.OPENAI_API_BASE = "http://localhost:4851"
+  Api.OPENAI_API_BASE = "http://localhost:4891/v1"
   loadApiKey("OPENAI_API_AZURE_ENGINE", "OPENAI_API_AZURE_ENGINE", "azure_api_engine_cmd", function(value)
     Api.OPENAI_API_AZURE_ENGINE = value
   end)
